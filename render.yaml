@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dreamland-menu-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://kakhiweinrooneykakhidze_db_user:rfPzmUY9LelaiBt8@oasis.cpxqj3v.mongodb.net/dreamland_oasis?retryWrites=true&w=majority
